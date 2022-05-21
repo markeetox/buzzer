@@ -143,7 +143,7 @@ function EditScore({ id, score }: { id: string; score: number }) {
               <Button variant="ghost" onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme="teal" type="submit">
+              <Button colorScheme="yellow" type="submit">
                 Confirm
               </Button>
             </ModalFooter>

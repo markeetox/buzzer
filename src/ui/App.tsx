@@ -26,7 +26,7 @@ export default function App() {
         <QueryClientProvider client={queryClient}>
           <ChakraProvider>
             <Box bg="gray.200">
-              <Container maxW="xl" p={0} bg="white">
+              <Container maxW="xl" p={0} bg="black">
                 <Suspense fallback={<Placeholder />}>
                   {roomId ? <Room /> : <Home />}
                 </Suspense>
@@ -51,7 +51,7 @@ const Room = () => {
 const Placeholder = () => {
   return (
     <Center h={window.innerHeight}>
-      <CircularProgress isIndeterminate color="teal.500" />
+      <CircularProgress isIndeterminate color="yellow.400" />
     </Center>
   );
 };

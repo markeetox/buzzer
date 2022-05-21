@@ -26,10 +26,10 @@ export default function Home() {
 
   return (
     <Flex direction="column" h={window.innerHeight}>
-      <HStack px={5} h="58px" bg="teal.500" shadow="base">
-        <Icon as={AiFillFire} w="30px" h="30px" color="white" />
+      <HStack px={5} h="58px" bg="yellow.400" shadow="base">
+        <Icon as={AiFillFire} w="30px" h="30px" color="black" />
         <Heading color="white" size="md">
-          Firebuzz
+          Let's have fun!
         </Heading>
       </HStack>
       <Box m={8} />
@@ -55,7 +55,7 @@ export default function Home() {
                   />
                 </FormControl>
                 <Spacer />
-                <Button variant="outline" colorScheme="teal" type="submit">
+                <Button variant="outline" colorScheme="yellow" type="submit">
                   Join
                 </Button>
               </Flex>

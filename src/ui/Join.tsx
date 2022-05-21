@@ -35,16 +35,16 @@ export default function Join() {
 
   return (
     <Flex direction="column" h={window.innerHeight}>
-      <HStack px={5} h="58px" bg="teal.500" shadow="base">
+      <HStack px={5} h="58px" bg="yellow.400" shadow="base">
         <CloseButton
-          color="white"
+          color="black"
           size="lg"
           onClick={() => {
             window.location.href =
               window.location.origin + window.location.pathname;
           }}
         />
-        <Heading color="white" size="md">
+        <Heading color="black" size="md">
           Room number: {roomId}
         </Heading>
       </HStack>
@@ -58,7 +58,7 @@ export default function Join() {
           >
             <AlertIcon boxSize="40px" />
             <AlertTitle mt={4} mb={1} fontSize="lg">
-              This room number does not exist
+              ☠ This room number does not exist
             </AlertTitle>
             <AlertDescription>
               Try navigating back and use a different one
