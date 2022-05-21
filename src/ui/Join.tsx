@@ -87,7 +87,7 @@ function Actions() {
       <Box m={4} />
       <Center>
         <Button
-          colorScheme="pink"
+          colorScheme="yellow"
           borderRadius="50%"
           h="150px"
           w="150px"
@@ -118,7 +118,7 @@ function EditName({ id, name }: { id: string; name: string }) {
 
   return (
     <Button
-      colorScheme="pink"
+      colorScheme="yellow"
       variant="ghost"
       rightIcon={<Icon as={AiFillEdit} />}
       onClick={onOpen}
@@ -141,7 +141,7 @@ function EditName({ id, name }: { id: string; name: string }) {
               <Button variant="ghost" onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme="teal" type="submit">
+              <Button colorScheme="yellow" type="submit">
                 Confirm
               </Button>
             </ModalFooter>

@@ -24,7 +24,7 @@ export default function Host() {
 
   return (
     <Flex direction="column" h={window.innerHeight}>
-      <HStack px={5} h="58px" bg="teal.500" shadow="base">
+      <HStack px={5} h="58px" bg="yellow.400" shadow="base">
         <CloseButton
           color="white"
           size="lg"
@@ -80,14 +80,14 @@ function Actions() {
   return (
     <>
       <HStack px={4} py={1} spacing="-5px">
-        <Text color="pink.500" p={2}>
+        <Text color="yellow.400" p={2}>
           You are the host
         </Text>
       </HStack>
       <Box m={4} />
       <Center>
         <Button
-          colorScheme="pink"
+          colorScheme="yellow"
           disabled={guestList.every(({ buzzed }) => !buzzed)}
           onClick={() => clearBuzzers()}
         >

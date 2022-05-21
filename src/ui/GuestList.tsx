@@ -46,7 +46,7 @@ function GuestWhoBuzzedList() {
 
   return (
     <VStack alignItems="start" overflowX="auto">
-      <Text color="teal.500" as="b">
+      <Text color="yellow.400" as="b">
         Buzzed
       </Text>
       <Divider />
@@ -56,7 +56,7 @@ function GuestWhoBuzzedList() {
             <ListItem>
               <Text>{name}</Text>
               <Box m={1} />
-              <Text p={1} fontSize="sm" color="pink.500">
+              <Text p={1} fontSize="sm" color="yellow.400">
                 {idx > 0
                   ? `+${buzzed?.toMillis()! - items[0]!.buzzed!.toMillis()}  ms`
                   : "🏆"}
@@ -79,7 +79,7 @@ function GuestWhoDidNotBuzzList() {
 
   return (
     <VStack alignItems="start" overflowX="auto">
-      <Text color="teal.500" as="b">
+      <Text color="yellow.400" as="b">
         Not buzzed yet
       </Text>
       <Divider />
@@ -92,7 +92,7 @@ function GuestWhoDidNotBuzzList() {
               {isHost ? (
                 <EditScore id={id} score={score} />
               ) : (
-                <Text p={1} fontSize="sm" color="pink.500">
+                <Text p={1} fontSize="sm" color="yellow.400">
                   {score === 1 ? "1 point" : `${score} points`}
                 </Text>
               )}
@@ -120,7 +120,7 @@ function EditScore({ id, score }: { id: string; score: number }) {
     <Button
       size="xs"
       rightIcon={<Icon as={AiOutlinePlusCircle} />}
-      colorScheme="pink"
+      colorScheme="yellow"
       onClick={onOpen}
     >
       {score === 1 ? "1 point" : `${score} points`}

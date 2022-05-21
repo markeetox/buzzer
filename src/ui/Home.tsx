@@ -78,7 +78,7 @@ export default function Home() {
               <Spacer />
               <Button
                 variant="outline"
-                colorScheme="teal"
+                colorScheme="yellow"
                 onClick={() => createRoom()}
               >
                 Host
@@ -95,7 +95,7 @@ export default function Home() {
           border="1px"
           borderColor="gainsboro"
         >
-          <Text fontSize="sm" colorScheme="gray">
+          <Text fontSize="sm" colorScheme="white">
             💡 Tip: you can re-join the same room again without losing your
             progress
           </Text>
