@@ -88,6 +88,9 @@ function Actions() {
       <Center>
         <Button
           bgGradient='linear(to-r, yellow.400, yellow.600)'
+          _hover={{
+            bgGradient: 'linear(to-r, yellow.300, yellow.500)',
+          }}
           borderRadius="50%"
           h="150px"
           w="150px"
