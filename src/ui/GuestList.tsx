@@ -54,7 +54,7 @@ function GuestWhoBuzzedList() {
         {items.map(({ id, name, buzzed }, idx) => (
           <motion.div key={id} layoutId={id} transition={spring}>
             <ListItem>
-              <Text>{name}</Text>
+              <Text fontSize="md">{name}</Text>
               <Box m={1} />
               <Text p={1} fontSize="sm" color="yellow.400">
                 {idx > 0

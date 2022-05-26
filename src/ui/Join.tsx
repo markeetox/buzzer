@@ -87,7 +87,7 @@ function Actions() {
       <Box m={4} />
       <Center>
         <Button
-          colorScheme="yellow"
+          bgGradient='radial(to-r, yellow.400, yellow.600)'
           borderRadius="50%"
           h="150px"
           w="150px"
