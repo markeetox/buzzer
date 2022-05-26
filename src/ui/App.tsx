@@ -25,8 +25,8 @@ export default function App() {
       <FirestoreProvider sdk={firestore}>
         <QueryClientProvider client={queryClient}>
           <ChakraProvider>
-            <Box bg="gray.200">
-              <Container maxW="xl" p={0} bg="black">
+            <Box bg="black">
+              <Container maxW="xl" p={0} bg="white">
                 <Suspense fallback={<Placeholder />}>
                   {roomId ? <Room /> : <Home />}
                 </Suspense>
