@@ -55,7 +55,7 @@ export default function Home() {
                   />
                 </FormControl>
                 <Spacer />
-                <Button variant="outline" colorScheme="yellow" type="submit">
+                <Button bgGradient='linear(to-r, yellow.400, yellow.600)' type="submit">
                   Join
                 </Button>
               </Flex>
@@ -77,8 +77,7 @@ export default function Home() {
               <Input name="roomId" type="hidden" value="" />
               <Spacer />
               <Button
-                variant="outline"
-                colorScheme="yellow"
+                bgGradient='linear(to-r, yellow.400, yellow.600)'
                 onClick={() => createRoom()}
               >
                 Host
